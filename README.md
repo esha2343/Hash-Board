@@ -1,12 +1,12 @@
 # Hash-Board
 
-    A collaborative whiiteboard application built using WEBRTC for real-time communication and collaboration.
+A collaborative whiiteboard application built using WEBRTC for real-time communication and collaboration.
 
 
 #Tech Stack
 
-    Frontend: HTML, CSS, JavaScript
-    Backend: Node.js, Express.js, Socket.io
+Frontend: HTML, CSS, JavaScript
+Backend: Node.js, Express.js, Socket.io
 
 # Features
 
