@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Board</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="canvas.js" defer></script>
+    <script src="../app.js"></script>
+    <link rel="icon" href="./icons/favicon.ico.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="options">
+            <i class=" lines fa-solid fa-bars"></i>
+        </div>
+        <div class="items">
+            <img src="icons/pencil-svgrepo-com.svg" alt="" class="pencil">
+            <img src="icons/eraser-svgrepo-com.svg" alt="" class="eraser">
+            <img src="icons/download-svgrepo-com.svg" alt="" class="download">
+            <img src="icons/images-svgrepo-com.svg" alt="" class="upload">
+            <img src="icons/notes-svgrepo-com.svg" alt="" class="notes">
+            <img src="icons/undo-svgrepo-com.svg" alt="" class="undo">
+            <img src="icons/redo-svgrepo-com.svg" alt="" class="redo">
+        </div>
+    </div>
+
+    <div class="pencil-cont">
+        <div class="slidebar">
+            <input type="range" min="2" max="10" value="3" class="pencilwidth">
+        </div>
+        <div class="colors">
+            <div class="red color"></div>
+            <div class="black color"></div>
+            <div class="blue color"></div>
+        </div>
+    </div>
+    <div class="eraser-cont">
+        <div class="slidebar2">
+            <input type="range" min="2" max="10" value="3" class="erwidth">
+        </div>
+    </div>
+
+    <canvas></canvas>
+
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js" integrity="sha384-Gr6Lu2Ajx28mzwyVR8CFkULdCU7kMlZ9UthllibdOSo6qAiN+yXNHqtgdTvFXMT4" crossorigin="anonymous" ></script>
+
+
+    <script>
+        let socket = io.connect("https://whiteboardrtc.onrender.com");
+    </script>
+
+</body>
+</html>
